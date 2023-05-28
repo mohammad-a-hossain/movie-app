@@ -1,3 +1,6 @@
+
+"use client"; 
+
 import MenueItem  from "./MenueItem"
 import DarkSwitch from "./DarkSwitch"
 import Link from "next/link"

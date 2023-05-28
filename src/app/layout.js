@@ -3,7 +3,12 @@
 
 //const inter = Inter({ subsets: ['latin'] })
 
+
+'use client';
+ 
+
 import Header from "./Components/Header"
+import Providers from './Components/Providers'
 import './globals.css'
 
 export const metadata = {
@@ -15,12 +20,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-    
+    <Providers>
       {/* header */}
       <Header/>
       {/* navbar */}
       {/* search bar */}
       {children}
+      </Providers>
       </body>
     </html>
   )
