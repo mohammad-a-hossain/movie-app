@@ -7,7 +7,7 @@ import Link from "next/link"
 
 export default function Header() {
     return (
-      <div className='flex items-center justify-between max-w-6xl py-6 mx-2 sm:mx-auto bg-slate-200'>
+      <div className='flex items-center justify-between max-w-6xl py-6 mx-2 sm:mx-auto dark:bg-slate-700 bg-slate-200'>
           <div className='flex'>
            <MenueItem title="HOME" address="/"  classNmae='...'  />
            <MenueItem title="ABOUT" address="/about" className='...' />
