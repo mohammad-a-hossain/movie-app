@@ -7,13 +7,12 @@ import { FaBeer } from 'react-icons/fa';
 
 
 
-export default function MenueItem({title, address,Icon}) {
+export default function MenueItem({title, address,Icon,params}) {
   return (
     <div>
 
     <Link href={address} className="mx-4 lg:mx-6 hover:text-amber-600 ">
    
-      
     <p className="hidden my-2 text-sm sm:inline">{title}</p>
     </Link>
   

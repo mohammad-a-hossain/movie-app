@@ -11,7 +11,7 @@ export default function Header() {
           <div className='flex'>
            <MenueItem title="HOME" address="/"  classNmae='...'  />
            <MenueItem title="ABOUT" address="/about" className='...' />
-  
+         
         </div>
             <div className="flex items-center space-x-5">
             <DarkSwitch/>
