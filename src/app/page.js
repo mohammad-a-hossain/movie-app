@@ -2,7 +2,7 @@
  const API_KEY=`284846583c7036aa8062346cf8f5aa80`
 
  //import {Results }from '@/Components/Results'
-import Results from './Components/Results';
+import Results from '@/Components/Results';
 
 export default async function Home({searchParams}){
 

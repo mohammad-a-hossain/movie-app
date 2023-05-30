@@ -6,11 +6,13 @@
 
 'use client';
  
+//import { Suspense } from 'react';
 
-import Header from "./Components/Header"
-import Providers from './Components/Providers'
-import Navbar from './components/Navbar'
+import Header from "@/Components/Header"
+import Providers from '../app/Providers'
+import Navbar from "@/Components/Navbar";
 import './globals.css'
+
 
 export const metadata = {
   title: 'movie app',
@@ -21,14 +23,22 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+     
     <Providers>
+  
       {/* header */}
       <Header/>
       {/* navbar */}
+     
       <Navbar />
+   
+     
       {/* search bar */}
       {children}
+  
+
       </Providers>
+     
       </body>
     </html>
   )
