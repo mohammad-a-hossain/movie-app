@@ -1,3 +1,4 @@
+'use client'
 import React,{useState} from 'react'
 
 import { useRouter } from "next/navigation";
@@ -13,6 +14,7 @@ export default function SearchBar() {
             e.preventDefault()
             if (!search) return;
 
+            setSearch('')
             router.push('/search/${search}');
     }
     

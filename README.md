@@ -1,6 +1,20 @@
 
 
-## Getting Started
+## Project : Movie app 
+
+### technology use
+
+### API use : TMDB api used for data service 
+
+## features:
+* Navigation
+* serch functionality
+* Top rated movie 
+- Recente movie data 
+- daiy 
+- weekly movie 
+
+
 
 First, run the development server:
 
