@@ -12,7 +12,9 @@ import Header from "@/Components/Header"
 import Providers from '../app/Providers'
 import Navbar from "@/Components/Navbar";
 import SearchBar from '@/Components/SearchBar'
+import CarouselPage from "@/Components/Carousel";
 import './globals.css'
+import Genrepage from "@/Components/GenryComp";
 
 
 export const metadata = {
@@ -29,9 +31,13 @@ export default function RootLayout({ children }) {
   
       {/* header */}
       <Header/>
-      {/* navbar */}
+
+      {/*slider*/}
+
+     {/*  <CarouselPage /> */}
      
       <Navbar />
+      <Genrepage/>
      <SearchBar/>
      
       {/* search bar */}
