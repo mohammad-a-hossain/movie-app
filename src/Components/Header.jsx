@@ -16,9 +16,9 @@ export default function Header() {
             <div className="flex items-center space-x-5">
             <DarkSwitch/>
           <Link href="/">
-            <h2 className="text-2xl">
+            <h2 className="text-2xl dark:text-white text-slate-900">
           
-              <span className="px-2 py-1 mr-1 font-bold rounded-lg bg-amber-500">
+              <span className="px-2 py-1 mr-1 font-bold rounded-lg">
                 Movie apps
               </span>
              

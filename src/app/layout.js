@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
 
       {/*slider*/}
 
-     {/*  <CarouselPage /> */}
+     {  <CarouselPage /> }
      
       <Navbar />
       <Genrepage/>

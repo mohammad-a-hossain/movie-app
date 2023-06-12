@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 let genries = {
 	"genres": [
@@ -83,12 +84,24 @@ let genries = {
 
 
 
-
 export default function Genrepage() {
-    // const genries =  getGenry()
+   
   const [genry,setGenry] = useState([genries.genres])
-  // const genry= genries([])
-   console.log(genry)
+
+   //console.log(genry)
+
+  const router = useRouter();
+
+
+
+  
+  //getting genres id 
+   const handleSubmitGenId=(id) =>{
+
+	router.push(`/genres/${id}`)
+
+   }
+
 
     return(
         <div className='flex justify-center max-w-6xl px-5 py-6 mx-2 my-2 sm:mx-auto dark:bg-slate-700 bg-slate-200'>
@@ -97,7 +110,7 @@ export default function Genrepage() {
             {
                 genry[0].map((gen,index) =>(
                 <li className='flex-row flex-wrap p-1 list-none justify-items-center' key={index}>
-                <a className='bg-slate-500 text-slate-50 hover:bg-violet-600'>{gen.name}</a> </li>
+                <a onClick={()=> handleSubmitGenId(gen.id)} className='bg-slate-500 text-slate-50 hover:bg-violet-600'>{gen.name}</a> </li>
                
              ))
             }

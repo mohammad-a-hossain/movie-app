@@ -1,5 +1,13 @@
 
 
+import Image from "next/image"
+
+import image1 from "/public/Image1.jpeg"
+import image2 from "/public/Image2.jpeg"
+import image3 from "/public/Image3.jpg"
+
+
+
 export default function CarouselPage(){
   return (
     <div>
@@ -10,24 +18,28 @@ export default function CarouselPage(){
     <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
        
         <div className="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="https://images.unsplash.com/photo-1533167649158-6d508895b680?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
+            <Image
+             src={image1}
+              width={700}
+               height={350}
+                alt="imae one"
+                className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            />
         </div>
        
-        <div className="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="https://images.unsplash.com/photo-1504060765228-f97d1772ff9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
-        </div>
+        {/* <div className="hidden duration-700 ease-in-out" data-carousel-item>
+            <Image src={`https://pixy.org/src/20/201310.jpg`} width={500} 
+            height={350} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
+        </div> */}
     
         <div className="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
+            <Image   src={image1} width={700} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            height={350} alt="image two"/>
         </div>
        
-        <div className="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="https://images.unsplash.com/photo-1592492152545-9695d3f473f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
-        </div>
       
-        <div className="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="https://images.unsplash.com/photo-1619963258837-b83f3406cfcd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
-        </div>
+      
+       
     </div>
    
     <div className="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
@@ -40,13 +52,13 @@ export default function CarouselPage(){
 
     <button type="button" className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
         <span className="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg aria-hidden="true" className="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"></path></svg>
+            <svg aria-hidden="true" className="w-5 h-5 text-white-100 sm:w-6 sm:h-6 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"></path></svg>
             <span className="sr-only">Previous</span>
         </span>
     </button>
     <button type="button" className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
         <span className="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg aria-hidden="true" className="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path></svg>
+            <svg aria-hidden="true" className="w-5 h-5 text-white-100 sm:w-6 sm:h-6 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path></svg>
             <span className="sr-only">Next</span>
         </span>
     </button>
@@ -58,3 +70,6 @@ export default function CarouselPage(){
   )
 }
 
+// https://th.bing.com/th/id/OIP.avb9nDfw3kq7NOoP0grM4wHaEK?pid=ImgDet&rs=1
+//https://th.bing.com/th/id/OIP.avb9nDfw3kq7NOoP0grM4wHaEK?pid=ImgDet&rs=1
+//https://th.bing.com/th/id/OIP.avb9nDfw3kq7NOoP0grM4wHaEK?pid=ImgDet&rs=1
